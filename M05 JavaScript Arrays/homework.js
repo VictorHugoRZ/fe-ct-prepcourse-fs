@@ -30,7 +30,7 @@ function agregarItemAlFinalDelArray(array, elemento) {
    // Agrega el "elemento" al final del arreglo recibido.
    // Retorna el arreglo.
    // Tu código:
-   array.push (elemento);
+   array.push(elemento);
    return array;
 }
 
@@ -38,7 +38,7 @@ function agregarItemAlComienzoDelArray(array, elemento) {
    // Agrega el "elemento" al comienzo del arreglo recibido.
    // Retorna el arreglo.
    // Tu código:
-   array.unshift (elemento);
+   array.unshift(elemento);
    return array;
 }
 
@@ -56,7 +56,7 @@ function arrayContiene(array, elemento) {
    // Verifica si el elemento existe dentro del arreglo recibido.
    // Retornar True si está, o False si no está.
    // Tu código:
-   var contiene = array.includes (elemento);
+   var contiene = array.includes(elemento);
    return contiene;
 }
 
