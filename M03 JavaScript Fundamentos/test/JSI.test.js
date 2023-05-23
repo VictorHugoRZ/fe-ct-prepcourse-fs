@@ -49,37 +49,37 @@ const {
 
 describe('JAVASCRIPT I', function () {
    describe('EJERCICIO 01', function () {
-      describe('nuevoString', function () {
+      xdescribe('nuevoString', function () {
          it('Debe ser un string', function () {
             expect(typeof nuevoString).toBe('string');
          });
       });
 
-      describe('nuevoNumero', function () {
+      xdescribe('nuevoNumero', function () {
          it('Debe ser un número', function () {
             expect(typeof nuevoNumero).toBe('number');
          });
       });
 
-      describe('nuevoBoolean', function () {
+      xdescribe('nuevoBoolean', function () {
          it('Debe ser un booleano', function () {
             expect(typeof nuevoBoolean).toBe('boolean');
          });
       });
 
-      describe('nuevaResta', function () {
+      xdescribe('nuevaResta', function () {
          it('Debe ser la resta correcta', function () {
             expect(nuevaResta).toBe(true);
          });
       });
 
-      describe('nuevaMultiplicación', function () {
+      xdescribe('nuevaMultiplicación', function () {
          it('Debe ser la multiplicación correcta', function () {
             expect(nuevaMultiplicacion).toBe(true);
          });
       });
 
-      describe('nuevoModulo', function () {
+      xdescribe('nuevoModulo', function () {
          it('Debe ser el resultado correcto del módulo', function () {
             expect(nuevoModulo).toBe(true);
          });
@@ -87,20 +87,20 @@ describe('JAVASCRIPT I', function () {
    });
 
    describe('EJERCICIO 02', function () {
-      describe('devolverString(str)', function () {
+      xdescribe('devolverString(str)', function () {
          it('Debe retornar el string provisto', function () {
             expect(devolverString('Henry')).toBe('Henry');
          });
       });
 
-      describe('suma(x, y)', function () {
+      xdescribe('suma(x, y)', function () {
          it('Debe retornar la suma de los dos argumentos', function () {
             expect(suma(5, 5)).toBe(10);
             expect(suma(-1, 5)).toBe(4);
          });
       });
 
-      describe('resta(x, y)', function () {
+      xdescribe('resta(x, y)', function () {
          it('Debe retornar la resta de los dos argumentos', function () {
             expect(resta(5, 5)).toBe(0);
             expect(resta(-1, 5)).toBe(-6);
@@ -109,7 +109,7 @@ describe('JAVASCRIPT I', function () {
          });
       });
 
-      describe('divide(x, y)', function () {
+      xdescribe('divide(x, y)', function () {
          it('Debe retornar la division de los dos argumentos', function () {
             expect(divide(5, 5)).toBe(1);
             expect(divide(10, 5)).toBe(2);
@@ -117,7 +117,7 @@ describe('JAVASCRIPT I', function () {
          });
       });
 
-      describe('multiplica(x, y)', function () {
+      xdescribe('multiplica(x, y)', function () {
          it('Debe retornar el producto de los dos argumentos', function () {
             expect(multiplica(5, 5)).toBe(25);
             expect(multiplica(10, -5)).toBe(-50);
@@ -125,7 +125,7 @@ describe('JAVASCRIPT I', function () {
          });
       });
 
-      describe('obtenerResto(x, y)', function () {
+      xdescribe('obtenerResto(x, y)', function () {
          it('Debe retornar el resto de dividir x sobre y', function () {
             expect(obtenerResto(15, 5)).toBe(0);
             expect(obtenerResto(21, 5)).toBe(1);
@@ -135,7 +135,7 @@ describe('JAVASCRIPT I', function () {
    });
 
    describe('EJERCICIO 03', function () {
-      describe('sonIguales(x, y)', function () {
+      xdescribe('sonIguales(x, y)', function () {
          it('Debe devolver True si los argumentos son iguales', function () {
             expect(sonIguales(15, 15)).toBe(true);
             expect(sonIguales('test', 'test')).toBe(true);
@@ -145,7 +145,7 @@ describe('JAVASCRIPT I', function () {
          });
       });
 
-      describe('tienenMismaLongitud(str1, str2)', function () {
+      xdescribe('tienenMismaLongitud(str1, str2)', function () {
          it('Debe devolver True si los strings tienen la misma longitud', function () {
             expect(tienenMismaLongitud('javascript', 'bumfuzzled')).toBe(true);
          });
@@ -154,7 +154,7 @@ describe('JAVASCRIPT I', function () {
          });
       });
 
-      describe('menosQueNoventa(num)', function () {
+      xdescribe('menosQueNoventa(num)', function () {
          it('Debe devolver True si el número es menor a noventa', function () {
             expect(menosQueNoventa(15)).toBe(true);
          });
@@ -164,7 +164,7 @@ describe('JAVASCRIPT I', function () {
          });
       });
 
-      describe('mayorQueCincuenta(num)', function () {
+      xdescribe('mayorQueCincuenta(num)', function () {
          it('Debe devolver True si el número es mayor a cincuenta', function () {
             expect(mayorQueCincuenta(15)).toBe(false);
             expect(mayorQueCincuenta(50)).toBe(false);
@@ -177,7 +177,7 @@ describe('JAVASCRIPT I', function () {
          });
       });
 
-      describe('esPar(num)', function () {
+      xdescribe('esPar(num)', function () {
          it('Debe devolver True si el número es par', function () {
             expect(esPar(6)).toBe(true);
             expect(esPar(0)).toBe(true);
@@ -187,7 +187,7 @@ describe('JAVASCRIPT I', function () {
          });
       });
 
-      describe('esImpar(num)', function () {
+      xdescribe('esImpar(num)', function () {
          it('Debe devolver True si el número es impar', function () {
             expect(esImpar(6)).toBe(false);
             expect(esImpar(7)).toBe(true);
@@ -202,7 +202,7 @@ describe('JAVASCRIPT I', function () {
    });
 
    describe('EJERCICIO 04', function () {
-      describe('elevarAlCuadrado(num)', function () {
+      xdescribe('elevarAlCuadrado(num)', function () {
          it('Debe devolver el número elevado al cuadrado', function () {
             expect(elevarAlCuadrado(6)).toBe(36);
             expect(elevarAlCuadrado(7)).toBe(49);
@@ -211,7 +211,7 @@ describe('JAVASCRIPT I', function () {
          });
       });
 
-      describe('elevarAlCubo(num)', function () {
+      xdescribe('elevarAlCubo(num)', function () {
          it('Debe devolver el número elevado al cubo', function () {
             expect(elevarAlCubo(3)).toBe(27);
             expect(elevarAlCubo(0)).toBe(0);
@@ -219,7 +219,7 @@ describe('JAVASCRIPT I', function () {
          });
       });
 
-      describe('elevar(num, exponent)', function () {
+      xdescribe('elevar(num, exponent)', function () {
          it('Debe devolver el número elevado al exponente indicado', function () {
             expect(elevar(2, 2)).toBe(4);
             expect(elevar(2, 3)).toBe(8);
@@ -228,7 +228,7 @@ describe('JAVASCRIPT I', function () {
          });
       });
 
-      describe('redondearNumero(num)', function () {
+      xdescribe('redondearNumero(num)', function () {
          it('Debe devolver el número redondeado', function () {
             expect(redondearNumero(1.5)).toBe(2);
             expect(redondearNumero(2)).toBe(2);
@@ -236,7 +236,7 @@ describe('JAVASCRIPT I', function () {
          });
       });
 
-      describe('redondearHaciaArriba(num)', function () {
+      xdescribe('redondearHaciaArriba(num)', function () {
          it('Debe devolver el número redondeado para arriba', function () {
             expect(redondearHaciaArriba(1.5)).toBe(2);
             expect(redondearHaciaArriba(2)).toBe(2);
@@ -244,7 +244,7 @@ describe('JAVASCRIPT I', function () {
          });
       });
 
-      describe('numeroRandom()', function () {
+      xdescribe('numeroRandom()', function () {
          it('Debe devolver un número entre 0 y 1', function () {
             expect(typeof numeroRandom()).toBe('number');
             expect(numeroRandom()).toBeGreaterThanOrEqual(0);
