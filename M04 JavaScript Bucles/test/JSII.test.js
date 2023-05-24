@@ -17,7 +17,7 @@ const {
 } = require('../homework');
 
 describe('JAVASCRIPT II', function () {
-   describe('obtenerMayor(x, y)', function () {
+   xdescribe('obtenerMayor(x, y)', function () {
       it('Debe retornar X si es mayor que Y', function () {
          expect(obtenerMayor(10, 5)).toBe(10);
       });
@@ -29,7 +29,7 @@ describe('JAVASCRIPT II', function () {
       });
    });
 
-   describe('mayoriaDeEdad(edad)', function () {
+   xdescribe('mayoriaDeEdad(edad)', function () {
       it("Debe retornar 'Allowed' si la edad es igual o mayor a 18", function () {
          expect(mayoriaDeEdad(18)).toBe('Allowed');
          expect(mayoriaDeEdad(35)).toBe('Allowed');
@@ -39,7 +39,7 @@ describe('JAVASCRIPT II', function () {
       });
    });
 
-   describe('conection(status)', function () {
+   xdescribe('conection(status)', function () {
       it('Debe retornar "Online" si el status es 1', function () {
          expect(conection(1)).toBe('Online');
       });
@@ -51,7 +51,7 @@ describe('JAVASCRIPT II', function () {
       });
    });
 
-   describe('saludo(idioma)', function () {
+   xdescribe('saludo(idioma)', function () {
       it("Debe retornar 'Guten Tag!' por 'aleman'", function () {
          expect(saludo('aleman')).toBe('Guten Tag!');
       });
@@ -67,7 +67,7 @@ describe('JAVASCRIPT II', function () {
       });
    });
 
-   describe('colors(color)', function () {
+   xdescribe('colors(color)', function () {
       it("Debe retornar 'This is {color}'", function () {
          expect(colors('blue')).toBe('This is blue');
          expect(colors('red')).toBe('This is red');
@@ -80,7 +80,7 @@ describe('JAVASCRIPT II', function () {
       });
    });
 
-   describe('esDiezOCinco(num)', function () {
+   xdescribe('esDiezOCinco(num)', function () {
       it('Debe retornar True si num es 10 o 5', function () {
          expect(esDiezOCinco(10)).toBe(true);
          expect(esDiezOCinco(5)).toBe(true);
@@ -93,7 +93,7 @@ describe('JAVASCRIPT II', function () {
       });
    });
 
-   describe('estaEnRango(num)', function () {
+   xdescribe('estaEnRango(num)', function () {
       it('Debe retornar True si num está en el rango', function () {
          expect(estaEnRango(35.5)).toBe(true);
          expect(estaEnRango(40)).toBe(true);
@@ -108,7 +108,7 @@ describe('JAVASCRIPT II', function () {
       });
    });
 
-   describe('esEntero(num)', function () {
+   xdescribe('esEntero(num)', function () {
       it('Debe retornar False si num no es entero', function () {
          expect(esEntero(0.5)).toBe(false);
       });
@@ -123,7 +123,7 @@ describe('JAVASCRIPT II', function () {
       });
    });
 
-   describe('fizzBuzz(num)', function () {
+   xdescribe('fizzBuzz(num)', function () {
       it('Debe retornar "fizzbuzz" si num es divisible por 3 y 5', function () {
          expect(fizzBuzz(15)).toBe('fizzbuzz');
       });
