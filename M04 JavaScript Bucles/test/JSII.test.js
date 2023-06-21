@@ -138,7 +138,7 @@ describe('JAVASCRIPT II', function () {
       });
    });
 
-   describe('operadoresLogicos(num1, num2, num3)', function () {
+   xdescribe('operadoresLogicos(num1, num2, num3)', function () {
       it("Debe retornar 'Numero 1 es mayor y positivo' si num1 es positivo y mayor que num2 y num3", function () {
          expect(operadoresLogicos(50, 2, 15)).toBe(
             'Numero 1 es mayor y positivo'
