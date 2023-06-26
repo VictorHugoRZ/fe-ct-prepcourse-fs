@@ -83,7 +83,8 @@ function agregarAmigo(objetoUsuario, nuevoAmigo) {
    // Debes agregar el "nuevoAmigo" al final de este arreglo.
    // Retornar el objeto.
    // Tu código:
-   
+   objetoUsuario["amigos"] = [nuevoAmigo];
+   return objetoUsuario;
 }
 
 function pasarUsuarioAPremium(objetoMuchosUsuarios) {
@@ -92,7 +93,10 @@ function pasarUsuarioAPremium(objetoMuchosUsuarios) {
    // Define esta propiedad de todos los usuarios como True.
    // Retornar el arreglo.
    // Tu código:
-   
+   for(var i = 0 ; i < objetoMuchosUsuarios.length ; i++) {
+      objetoMuchosUsuarios[i]["esPremium"] = true;
+   }
+   return objetoMuchosUsuarios;
 }
 
 function sumarLikesDeUsuario(objetoUsuario) {
@@ -101,12 +105,14 @@ function sumarLikesDeUsuario(objetoUsuario) {
    // Cada post posee una propiedad llamada "likes". Esta propiedad es un número.
    // Debes sumar los likes de todos los post y retornar el resultado.
    // Tu código:
-   
+   var likesTotales = 0;
+   objetoUsuario.posts.forEach(post => likesTotales = post.likes + likesTotales);
+   return likesTotales;
 }
 
 function agregarMetodoCalculoDescuento(objetoProducto) {
-   // Agrega una propiedad al "objetoProducto" con el nombre "calcularPrecioDescuento".
-   // Esta propiedad debe ser una función que multiplique el precio del producto por el porcentajeDeDescuento.
+   // Agrega una propiedad al "objetoProducto" con el nombre "calcularPrecioDescuento". 1.Primer paso
+   // Esta propiedad debe ser una función que multiplique el precio del producto por el porcentajeDeDescuento. 2.Segundo Paso
    // El "objetoProducto" posee una propiedad "precio" y una propiedad "porcentajeDeDescuento".
    // Luego debes restar del precio total del producto ese valor de descuento.
    // Retornar el precio final.

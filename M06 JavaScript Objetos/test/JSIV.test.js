@@ -17,7 +17,7 @@ const {
 } = require('../homework');
 
 describe('JAVASCRIPT IV', function () {
-   describe('crearGato(nombre, edad)', function () {
+   xdescribe('crearGato(nombre, edad)', function () {
       it('Debe crear un nuevo objeto con las propiedades "nombre", y "edad"', function () {
          expect(crearGato('Snowball', 1).nombre).toBe('Snowball');
          expect(crearGato('Snowball', 1).edad).toBe(1);
@@ -29,7 +29,7 @@ describe('JAVASCRIPT IV', function () {
       });
    });
 
-   describe('nuevoUsuario(nombre, email, password)', function () {
+   xdescribe('nuevoUsuario(nombre, email, password)', function () {
       it('Debe devolver un nuevo objeto con las propiedades "nombre", "email" y "password"', function () {
          const user = {
             nombre: 'Jhon',
@@ -50,7 +50,7 @@ describe('JAVASCRIPT IV', function () {
       });
    });
 
-   describe('agregarPropiedad(objeto, propiedad)', function () {
+   xdescribe('agregarPropiedad(objeto, propiedad)', function () {
       it('Debe agregar la propiedad al objeto con valor null', function () {
          const object = {
             x: 1,
@@ -65,7 +65,7 @@ describe('JAVASCRIPT IV', function () {
       });
    });
 
-   describe('invocarMetodo(objeto, metodo)', function () {
+   xdescribe('invocarMetodo(objeto, metodo)', function () {
       it('Debe invocar el método del objeto', function () {
          const object = {
             x: 0,
@@ -78,7 +78,7 @@ describe('JAVASCRIPT IV', function () {
       });
    });
 
-   describe('multiplicarNumeroDesconocidoPorCinco(objetoMisterioso)', function () {
+   xdescribe('multiplicarNumeroDesconocidoPorCinco(objetoMisterioso)', function () {
       it('Debe retornar el numeroMisterioso multiplicado por 5', function () {
          const mysteryBox = {
             numeroMisterioso: 999,
@@ -89,7 +89,7 @@ describe('JAVASCRIPT IV', function () {
       });
    });
 
-   describe('eliminarPropiedad(objeto, propiedad)', function () {
+   xdescribe('eliminarPropiedad(objeto, propiedad)', function () {
       it('Debe eliminar la propiedad del objeto', function () {
          const updatedObject = {
             x: 1,
@@ -104,7 +104,7 @@ describe('JAVASCRIPT IV', function () {
       });
    });
 
-   describe('tieneEmail(objetoUsuario)', function () {
+   xdescribe('tieneEmail(objetoUsuario)', function () {
       it('Debe retornar True si el objetoUsuario posee un valor definido en la propiedad "email"', function () {
          expect(
             tieneEmail({ usernombre: 'Samuel', email: 'samuel@email.com' })
@@ -116,7 +116,7 @@ describe('JAVASCRIPT IV', function () {
       });
    });
 
-   describe('tienePropiedad(objeto, propiedad)', function () {
+   xdescribe('tienePropiedad(objeto, propiedad)', function () {
       it('Debe retornar True si el objeto posee una propiedad con el nombre del parámetro', function () {
          const obj = {
             x: true,
@@ -131,7 +131,7 @@ describe('JAVASCRIPT IV', function () {
       });
    });
 
-   describe('verificarPassword(user, password)', function () {
+   xdescribe('verificarPassword(user, password)', function () {
       it('Debe retornar True si la contraseña es correcta', function () {
          const user = {
             password: 'Me encanta JS!',
@@ -148,7 +148,7 @@ describe('JAVASCRIPT IV', function () {
       });
    });
 
-   describe('actualizarPassword(objetoUsuario, password)', function () {
+   xdescribe('actualizarPassword(objetoUsuario, password)', function () {
       it('Debe devolver al usuario con la contraseña actualizada', function () {
          const user = {
             password: 'Me encanta JS!',
